@@ -1,23 +1,41 @@
 # Silver Creek Design
 
-Company site for [Silver Creek Design](www.silvercreekdesign.ca) -- a static website made with Bootstrap and hosted in Amazon's S3.
+Company website for [Silver Creek Design](www.silvercreekdesign.ca) -- a static website made with Bootstrap and hosted in Amazon's S3.
 
-## Deploying
+## Manage the Hosting
 
 ### Requirements
 
-* An AWS account w/ CF and S3 permissions
+* An AWS account w/ CFN and S3 permissions
 * AWS CLI installed w/ auth configured
 
-### Manage the Hosting
+### Creating the bucket
 
-The static site is served from a S3 bucket. All management: creating the bucket, updating the site files, and deleting the bucket can be done easily via the project's `Makefile`. 
+Creates a static web hosting bucket with proper ACLs via AWS CloudFormation
 
-Run `make help` for details on each of the available targets.
+```
+make create-bucket
+```
+
+### Updating the website files
+
+Syncs files from the local `www/` directory to the S3 bucket
+
+```
+make sync-www
+```
+
+### Cleaning up the bucket
+
+Deletes all the files from the hosting bucket, then deletes the S3 bucket by deleting the CloudFormation stack.
+
+```
+make delete-bucket
+```
 
 ## DNS Configuration
 
-To keep things inexpensive, I used NameCheap's free service to manage the domain. To point the domain to the S3 bucket, I added two records to the DNS config:
+To keep things inexpensive, I used NameCheap to manage the domain. To point the domain to the S3 bucket, I added two records to the DNS config:
 ```
 CNAME Record      www   domain.com.s3-website-us-west-2.amazonaws.com.
 Redirect Record   @     http://www.domain.com   Permanent(301)
