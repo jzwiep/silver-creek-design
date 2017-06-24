@@ -1,6 +1,6 @@
 # Silver Creek Design
 
-Company website for [Silver Creek Design](www.silvercreekdesign.ca) -- a static website made with Bootstrap and hosted in Amazon's S3.
+Company website for [Silver Creek Design](http://www.silvercreekdesign.ca) -- a static website made with Bootstrap and hosted in Amazon's S3.
 
 ## Manage the Hosting
 
