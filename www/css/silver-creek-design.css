@@ -3,30 +3,13 @@ body {
   padding-top: 50px;
 }
 
-p {
-  font-size: 1.5em;
-}
-
-h2 {
-  font-size: 3em;
-}
-
-.landing-copy {
-  padding: 40px 15px;
-}
-
 .jumbotron {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/jumbotron-bkg.jpg");
     background-color: #2c3e50;
     margin-bottom: 0;
-    min-height: 350px;
     background-repeat: no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     background-size: cover;
     color: white;
-}
-
-.jumbotron h1 {
-  font-size: 6em;
 }
