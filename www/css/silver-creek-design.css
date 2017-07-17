@@ -5,14 +5,14 @@ body {
 }
 
 .jumbotron {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/jumbotron-bkg.jpg");
-    background-color: #2c3e50;
-    margin-bottom: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    background-size: cover;
-    color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/jumbotron-bkg.jpg");
+  background-color: #2c3e50;
+  margin-bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 
 .main-copy {
@@ -27,25 +27,29 @@ body {
   min-height: 250px;
 }
 #quote-carousel .carousel-control {
-    background: none;
-    color: #CACACA;
-    font-size: 2.3em;
-    text-shadow: none;
+  background: none;
+  color: #CACACA;
+  font-size: 2.3em;
+  text-shadow: none;
 }
 .item blockquote {
-    border-left: none;
-    margin: 0;
+  border-left: none;
+  margin: 0;
 }
 .item blockquote p:before {
-    content: open-quote;
-    font-size: 2em;
-    line-height: 0.5em;
-    float: left;
-    margin-right: 5px;
+  content: open-quote;
+  font-size: 2em;
+  line-height: 0.5em;
+  float: left;
+  margin-right: 5px;
 }
 
 @media (max-width: 480px) { 
   #quote-carousel{
     min-height: 420px;
   }
+}
+
+#premiers-award-well{
+  margin: 10px 50px 0px 50px;
 }
