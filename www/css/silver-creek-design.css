@@ -37,10 +37,11 @@ body {
     margin: 0;
 }
 .item blockquote p:before {
-    content: "\f10d";
-    font-family: 'Fontawesome';
+    content: open-quote;
+    font-size: 2em;
+    line-height: 0.5em;
     float: left;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 @media (max-width: 480px) { 
