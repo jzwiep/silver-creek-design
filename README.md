@@ -1,6 +1,6 @@
 # Silver Creek Design
 
-Company website for [Silver Creek Design](http://www.silvercreekdesign.ca) -- a static website made with Bootstrap and hosted in Amazon's S3.
+Archived company website for [Silver Creek Design](https://jzwiep.github.io/silver-creek-design/) -- a static website made with Bootstrap and hosted in Amazon's S3.
 
 ## Manage the Hosting
 
@@ -42,3 +42,11 @@ Redirect Record   @     http://www.domain.com   Permanent(301)
 ```
 * `CNAME` from `www` to the S3 bucket
 * URL Redirection from the root domain to the `www` domain
+
+## Using Github to host an archived site
+
+Push the web directory (`www`) to the `gh-pages` branch as a git subtree.
+
+```
+git subtree push --prefix www origin gh-pages
+```
